@@ -11,7 +11,7 @@ namespace Students.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private IStudentRepository _studentRepository;
+        private readonly IStudentRepository _studentRepository;
         public StudentController(IStudentRepository studentRepository)
         {
             _studentRepository = studentRepository;
@@ -22,7 +22,8 @@ namespace Students.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_studentRepository.Read());
+            var result = _studentRepository.Read();
+            return Ok(result);
         }
 
         // GET api/<ValuesController>/5
