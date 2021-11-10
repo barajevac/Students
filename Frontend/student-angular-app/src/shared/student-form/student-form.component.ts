@@ -58,13 +58,6 @@ export class StudentFormComponent implements OnInit {
     this.studentInput.phone = this.studentForm.get('phone')?.value;
   }
 
-  // private clearForm(): void {
-  //   this.studentForm.get('firstName')?.setValue('');
-  //   this.studentForm.get('lastName')?.setValue('');
-  //   this.studentForm.get('mail')?.setValue('');
-  //   this.studentForm.get('phone')?.setValue('');
-  // }
-
   onSubmit() {
     if (this.isEditing) {
       this.setStudentForEdit();
