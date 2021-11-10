@@ -7,7 +7,7 @@ namespace Students.DAL.StudentRepository
 {
     public interface IStudentRepository
     {
-        public void Create(Student student);
+        public Student Create(Student student);
         public List<Student> Read();
         public Student Read(Guid studentId);
         public bool Update(Guid studentId, Student student);

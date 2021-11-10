@@ -1,0 +1,39 @@
+<div class="studentFormWrapper">
+  <mat-card>
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()" class="formContent">
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input name="firstName" matInput formControlName="firstName" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="mail" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" />
+      </mat-form-field>
+
+      <div class="formButtonsWrapper">
+        <button
+          mat-button
+          color="primary"
+          type="submit"
+          [disabled]="studentForm.invalid"
+        >
+          Submit
+        </button>
+        <button mat-button color="primary" type="submit" (click)="closeForm()">
+          Cancell
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>

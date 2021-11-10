@@ -8,11 +8,11 @@ namespace Students.DAL.StudentRepository
 {
     public class StudentRepository : IStudentRepository
     {
-        public void Create(Student student)
+        public Student Create(Student student)
         {
             using (StreamWriter streamWriter = new StreamWriter(@"..\..\Data.txt", true))
             {
-                Write(student, streamWriter, true);
+                return Write(student, streamWriter, true);
             }
         }
 
@@ -109,7 +109,7 @@ namespace Students.DAL.StudentRepository
             return false;
         }
 
-        private static void Write(Student student, StreamWriter streamWriter, bool isCreate = false)
+        private static Student Write(Student student, StreamWriter streamWriter, bool isCreate = false)
         {
             if (isCreate)
                 student.Id = Guid.NewGuid();
@@ -117,6 +117,7 @@ namespace Students.DAL.StudentRepository
             var input = $"{student.Id} {student.FirstName} {student.LastName} {student.Mail} {student.Phone}";
             streamWriter.WriteLine(input);
             streamWriter.Close();
+            return student;
         }
     }
 }

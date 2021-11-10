@@ -1,0 +1,17 @@
+.studentTablewrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50 px 0 px 0 px 0 px;
+}
+
+.studentTableMargin {
+  margin-top: 50px;
+}
+
+table {
+  width: 700px;
+}
+
+.mat-column-operation {
+  width: 80px;
+}

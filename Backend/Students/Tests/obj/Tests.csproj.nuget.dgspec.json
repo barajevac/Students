@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Tests\\Tests.csproj": {}
+    "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\Students.csproj": {
+    "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\Students.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\Students.csproj",
+        "projectUniqueName": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\Students.csproj",
         "projectName": "Students",
-        "projectPath": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\Students.csproj",
+        "projectPath": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\Students.csproj",
         "packagesPath": "C:\\Users\\koris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\obj\\",
+        "outputPath": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\koris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.21, 3.1.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -57,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Tests\\Tests.csproj": {
+    "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Tests\\Tests.csproj",
+        "projectPath": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\koris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Tests\\obj\\",
+        "outputPath": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\koris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,8 +103,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\Students.csproj": {
-                "projectPath": "C:\\Users\\koris\\Desktop\\Students\\Backend\\Students\\Students\\Students.csproj"
+              "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\Students.csproj": {
+                "projectPath": "C:\\Vladan Barajevac\\Projects\\Students\\Backend\\Students\\Students\\Students.csproj"
               }
             }
           }
@@ -132,12 +150,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

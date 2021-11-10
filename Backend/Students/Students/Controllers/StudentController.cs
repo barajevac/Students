@@ -41,8 +41,8 @@ namespace Students.Controllers
         [HttpPost]
         public ActionResult Post(Student student)
         {
-            _studentRepository.Create(student);
-            return Ok();
+            var res = _studentRepository.Create(student);
+            return Ok(res);
         }
 
         // PUT api/<ValuesController>/5

@@ -1,0 +1,11 @@
+<app-students
+  (studentForAdding)="addStudent($event)"
+  (studentForEditing)="editStudent($event)"
+></app-students>
+
+<app-student-form
+  *ngIf="studentFormIsVisible"
+  [studentInput]="student"
+  (closeFormEvent)="closeForm()"
+  (updateStudentTable)="updateStudentTable($event)"
+></app-student-form>

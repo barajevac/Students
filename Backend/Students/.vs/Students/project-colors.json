@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3235608d-4a93-4e49-98c2-9732bb4a9c7f": {
+      "ProjectGuid": "3235608d-4a93-4e49-98c2-9732bb4a9c7f",
+      "DisplayName": "Students",
+      "ColorIndex": 0
+    },
+    "573333b5-9579-44e4-8be0-f0ba00b799ca": {
+      "ProjectGuid": "573333b5-9579-44e4-8be0-f0ba00b799ca",
+      "DisplayName": "Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
