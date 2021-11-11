@@ -17,9 +17,9 @@ export class StudentFormComponent implements OnInit {
   @Output() closeFormEvent = new EventEmitter<boolean>();
   @Output() updateStudentTable = new EventEmitter<Student>();
 
-  private isEditing: boolean = false;
+  public isEditing: boolean = false;
 
-  studentForm = new FormGroup({
+  public studentForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [
       Validators.required,
       Validators.pattern('[a-zA-Z]*'),

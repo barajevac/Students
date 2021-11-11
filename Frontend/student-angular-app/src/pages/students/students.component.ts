@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Student } from 'src/models/student/student';
 import { StudentService } from 'src/services/student.service';
 
@@ -8,7 +9,7 @@ import { StudentService } from 'src/services/student.service';
   styleUrls: ['./students.component.css'],
 })
 export class StudentsComponent implements OnInit {
-  constructor(private studentService: StudentService) {}
+  constructor(public studentService: StudentService) {}
 
   @Output() studentForAdding = new EventEmitter<any>();
   @Output() studentForEditing = new EventEmitter<Student>();
