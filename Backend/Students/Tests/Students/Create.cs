@@ -73,13 +73,13 @@ namespace Tests.Students
         }
 
         [Test]
-        public void DeleteSuccessTest()
+        public void CreateSuccessTest()
         {
             ActionResult result = null;
             CreateController(_studentRepo);
 
             Assert.DoesNotThrow(() => { result = _studentController.Post(_studentsToAdd); });
-            OkResult okResult = (OkResult)result;
+            OkObjectResult okResult = (OkObjectResult)result;
 
             _studentRepo.Verify(s => s.Create(It.IsAny<Student>()), Times.Once());
             Assert.IsNotNull(okResult);
